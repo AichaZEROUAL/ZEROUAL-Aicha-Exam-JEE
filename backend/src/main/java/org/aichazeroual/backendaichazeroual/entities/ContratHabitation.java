@@ -10,7 +10,7 @@ import org.aichazeroual.backendaichazeroual.enums.TypeLogement;
 @Data @NoArgsConstructor @AllArgsConstructor
 public class ContratHabitation extends ContratAssurance {
     @Enumerated(EnumType.STRING)
-    private TypeLogement typeLogement; // [cite: 16]
-    private String adresse; // [cite: 16]
-    private double superficie; // [cite: 17]
+    private TypeLogement typeLogement;
+    private String adresse;
+    private double superficie;
 }
