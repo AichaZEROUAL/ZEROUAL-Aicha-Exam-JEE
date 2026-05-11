@@ -8,13 +8,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class InsuranceMapperImpl {
 
-    public ClientDTO fromClient(Client client) {
+    public ClientDTO fromClient(Client client) { // Entité -> DTO
         ClientDTO clientDTO = new ClientDTO();
         BeanUtils.copyProperties(client, clientDTO);
         return clientDTO;
     }
 
-    public Client fromClientDTO(ClientDTO clientDTO) {
+    public Client fromClientDTO(ClientDTO clientDTO) { // DTO -> Entité
         Client client = new Client();
         BeanUtils.copyProperties(clientDTO, client);
         return client;

@@ -24,7 +24,7 @@ public class InsuranceServiceImpl implements InsuranceService {
 
     @Override
     public ClientDTO saveClient(ClientDTO clientDTO) {
-        Client client = dtoMapper.fromClient(clientDTO);
+        Client client = dtoMapper.fromClientDTO(clientDTO);
         Client savedClient = clientRepository.save(client);
         return dtoMapper.fromClient(savedClient);
     }
