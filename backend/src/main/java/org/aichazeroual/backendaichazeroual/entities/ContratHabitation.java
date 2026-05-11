@@ -8,6 +8,7 @@ import org.aichazeroual.backendaichazeroual.enums.TypeLogement;
 
 @Entity @DiscriminatorValue("HAB")
 @Data @NoArgsConstructor @AllArgsConstructor
+
 public class ContratHabitation extends ContratAssurance {
     @Enumerated(EnumType.STRING)
     private TypeLogement typeLogement;

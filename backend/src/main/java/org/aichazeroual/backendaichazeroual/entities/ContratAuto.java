@@ -8,6 +8,7 @@ import org.aichazeroual.backendaichazeroual.enums.TypeLogement;
 
 @Entity @DiscriminatorValue("AUTO")
 @Data @NoArgsConstructor @AllArgsConstructor
+
 public class ContratAuto extends ContratAssurance {
     private String numImmatriculation;
     private String marque;

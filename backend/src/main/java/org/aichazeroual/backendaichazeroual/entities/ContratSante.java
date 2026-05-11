@@ -8,6 +8,7 @@ import org.aichazeroual.backendaichazeroual.enums.NiveauCouverture;
 
 @Entity @DiscriminatorValue("SAN")
 @Data @NoArgsConstructor @AllArgsConstructor
+
 public class ContratSante extends ContratAssurance {
     @Enumerated(EnumType.STRING)
     private NiveauCouverture niveauCouverture;

@@ -14,6 +14,7 @@ import java.util.List;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "TYPE_CONTRAT", length = 4)
 @Data @NoArgsConstructor @AllArgsConstructor
+
 public abstract class ContratAssurance {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
